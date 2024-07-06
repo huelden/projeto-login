@@ -19,7 +19,7 @@ paleta de cores
 }
 
 body, html {
-    background-color: #F285C1;
+    background-image: linear-gradient(to top,#CE7ED9,#574759,#574759,#CE7ED9);
     height: 100vh;
     width: 100vw;
 }
