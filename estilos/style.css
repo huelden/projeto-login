@@ -3,11 +3,16 @@
 /**
 paleta de cores
 
-#F285C1
-#CE7ED9
-#574759
-#024059
-#F2C4B3
+#text-size-adjust: inherit;
+   font-size: 9px;
+
+   padding: 5px;
+   margin-right: 10px;
+  #F285C1rosa
+#CE7ED9 rosa lilas
+#574759 lilas cinsa
+#024059 verde 
+#F2C4B3 coral lith
 
 **/
 
@@ -20,7 +25,7 @@ paleta de cores
 }
 
 body, html {
-    background-image: linear-gradient(to top,#CE7ED9,#574759,#574759,#CE7ED9);
+    background-image: linear-gradient(to top,#F285C1,#F2C4B3,#F285C1);
    
     height: 100vh;
     width: 100vw;
@@ -41,7 +46,7 @@ section#login {
 
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 600px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.671);
 
@@ -52,19 +57,19 @@ section#login > div#imagem {
     display: block;
     background: #F285C1 url(../imagens/pexels-rickyrecap-1964471.jpg) no-repeat;
     background-size: cover;
-    height: 40%;
+    background-position: center top;
+    height: 200px;
     
 }
 section#login > div#formulario {
+   display: block;
    
-    text-size-adjust: inherit;
-    font-size: 9px;
-   
-  
-display: block;
-    padding: 5px;
-    margin-right: 10px;
-    
+   text-size-adjust: inherit;
+   font-size: 9px;
+
+   padding: 10px;
+   margin-right: 10px;
+ 
    
 }
 div#formulario > h1 {
@@ -74,6 +79,37 @@ div#formulario > h1 {
 div#formulario > p {
     font-size: 4em;
 }
-div#campo {
+form > input[type=submit] {
+    display: block;
     font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #024059;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form > input[type=submit]:hover {
+    background-color: #574759;
+
+}
+form > a.botao {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: #024059fd;
+    color: white;
+    border: 1px solid #F2C4B3;
+    border-radius: 5px;
+    
+    
+}
+form > a.botao > i {
+    font-size: 0.8em;
 }
